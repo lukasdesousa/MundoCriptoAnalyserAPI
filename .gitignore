@@ -1,2 +1,28 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Configurações do ambiente
 .env
-node_modules
+
+# Logs e arquivos temporários
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios gerados em builds ou por ferramentas
+dist/
+build/
+.cache/
+
+# Arquivos do sistema operacional e editores de código
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Dependências da Vercel
+.vercel/
