@@ -4,6 +4,7 @@ package-lock.json
 
 # Configurações do ambiente
 .env
+config
 
 # Logs e arquivos temporários
 logs/
