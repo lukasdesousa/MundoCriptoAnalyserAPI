@@ -1,8 +1,7 @@
-import { getTokenSummary } from "../services/mcRugCheckService.service.js";
+import { getTokenSummary, getTokenReport } from "../services/mcRugCheckService.service.js";
 
 export async function getTokenSummaryController(req, res) {
   try {
-    console.log('getTokenSummaryController foi chamado')
     const { mint } = req.params;
     const data = await getTokenSummary(mint);
     res.json(data);
@@ -11,6 +10,17 @@ export async function getTokenSummaryController(req, res) {
   }
 }
 
-export async function home(req, res) {
+
+export async function getTokenReportController(req, res) {
+  try {
+    const { mint } = req.params;
+    const data = await getTokenReport(mint);
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+export function home(req, res) {
   return res.send({message: 'Bem-vindo(a)!'})
 }

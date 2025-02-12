@@ -1,9 +1,10 @@
 import express from "express";
-import { getTokenSummaryController, home } from "../controllers/mcRugCheckController.js";
+import { getTokenSummaryController, getTokenReportController, home } from "../controllers/mcRugCheckController.js";
 
 const router = express.Router();
 
-router.get("/tokens/:mint/report/summary", getTokenSummaryController);
-router.get("/", home);
+router.get("/v1/tokens/:mint/report/summary", getTokenSummaryController);
+router.get("/v1/tokens/:mint/report", getTokenReportController);
+router.get("/v1", home);
 
 export default router;

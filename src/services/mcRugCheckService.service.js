@@ -16,3 +16,15 @@ export async function getTokenSummary(mint) {
     throw new Error("Não foi possível obter o relatório do token.");
   }
 }
+
+export async function getTokenReport(mint) {
+  try {
+    const response = await axios.get(`${config.baseUrl}/tokens/${mint}/report`);
+    console.log(config.baseUrl)
+    return response.data;
+  } catch (error) {
+    console.error("Erro ao obter o relatório:", error.response?.data || error.message);
+    throw new Error("Não foi possível obter o relatório do token, tente inserir outro token.");
+  }
+}
+
