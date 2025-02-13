@@ -51,7 +51,7 @@ This project is licensed under the MIT License.
 
 ---
 
-This API as been developed by <a href="www.linkedin.com/in/lukasdesouza">Lukas De Souza</a>, with the help of RugCHeck.
+This API as been developed by <a href="www.linkedin.com/in/lukasdesouza">Lukas De Souza</a>, with the help of RugCheck.
 
 
 
