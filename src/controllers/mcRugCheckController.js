@@ -22,5 +22,5 @@ export async function getTokenReportController(req, res) {
 }
 
 export function home(req, res) {
-  return res.send({message: 'Bem-vindo(a)!'})
+  return res.send({message: 'Seja muito bem-vindo(a) a API do Mundo Cripto Analyser!'})
 }
